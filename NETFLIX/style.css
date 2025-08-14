@@ -1,0 +1,448 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+     font-family: 'Poppins', sans-serif;
+
+
+}
+body {
+    background-color: black;
+}
+.main{
+      height: 644px;
+    background-image: url("assets/image.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    position: relative;
+    display: block;
+}
+.main .box{
+     height: 644px;
+   width: 100%;
+   opacity: 0.70;
+   background-color: black;
+   position: absolute;
+   top: 0;
+   
+}
+nav{
+    max-width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+nav img{
+  
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button{
+    position: relative;
+    z-index: 10;
+}
+
+.hero{
+ font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+    
+}
+.hero> :nth-child(1){
+    font-family: 'poppins' sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+.hero> :nth-child(2){
+    font-weight:400;
+    font-size: 24px;
+    text-align: center;
+}
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.separation{
+  
+    height: 7px;
+    background-color: rgb(87, 87, 87);
+    position: relative;
+    z-index: 20;
+
+}
+
+
+
+.btn{   
+padding: 3px 8px;
+font-weight: 400;
+color: white;
+background-color: rgba(248, 243, 243 ,0.021);
+border-radius: 1px solid white;
+cursor: pointer;
+   border-radius: 4px;
+
+
+
+}
+.btn-red{
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 400;
+
+}
+.btn-red-sm{
+    background-color: red;
+    color: white;
+    /* border-radius: 4px;
+margin-left: 8px; */
+}
+
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+}
+.main input{
+    padding: 7px 101px 8px 14px;
+    color: white;
+    /* font-weight: 500; */
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23,23, 0.7);
+    border-radius: rgba(256, 232, 232, 0.5);
+   
+}
+.cards{
+       display: grid;
+            grid-template-areas: "nav nav"
+                                "article article ";
+                                
+                            
+   
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.item{
+
+   border-radius: 9px;
+    width: 500px;
+    color: white;
+    margin-left: 10px;
+}
+
+
+h2{
+    margin-top: 10px;
+    font-size: xx-large;
+       font-family: 'poppins' sans-serif;
+    
+}
+h3{
+    margin-top: 10px;
+    font-size: 25px;
+    padding-left: 7px;
+}
+    p{
+        font-size: 12px;
+        margin: 12px;    
+    }
+
+  .item-1{
+    
+            grid-area: nav;
+          justify-items: center;
+           height: 100px;
+            width: 250px;
+            color: white;
+            
+        }
+        .item-2{
+             grid-area: article;
+              justify-items: center;
+         height: 350px;
+         width: 500px;
+         background-image: url(assets/vlog.jpeg);
+         background-size: cover;
+          /* background-position: center left; */
+       
+         
+        }
+
+        .item-3{
+ grid-area: article;
+        height: 350px;
+        width: 500px;
+          background-image: url(assets/vlog2.jpeg);
+          background-size: cover;
+          background-position: bottom;
+
+
+        }
+
+
+.card{
+       display: grid;
+            grid-template-areas: "nav nav "
+                                "article article  ";
+                                
+                            
+   
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+
+     
+ 
+          .item-6{
+            grid-area: nav;
+            margin-top: 10px;
+            justify-items: center;
+          
+           height: 100px;
+            width: 400px;
+            color: white;
+          
+            
+        }
+        .item-7{
+          
+             height: 250px;
+        width: 400px;
+          background: linear-gradient(#312c51, #642b73) ;
+
+        }
+
+        .item-8{
+        width: 400px;
+height: 250px;
+          background: linear-gradient(#312c51, #642b73) ;
+
+        }
+        .item-9{
+        width: 400px;
+        height: 250px;
+          background: linear-gradient(#312c51, #642b73) ;
+
+        }
+        .item-10{
+        width: 400px;
+        height: 250px;
+
+      background: linear-gradient(#312c51, #642b73) ;
+
+       }
+
+      
+
+
+       @media screen and (max-width: 1300px) {
+        
+.cards{
+       display: grid;
+            grid-template-areas: "nav  "
+                                "article aricle  ";
+                        
+   
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+         justify-items: center;
+}
+
+
+
+
+      .item-2{
+        
+        height: 200px;
+        width: 130px;
+          background-image: url(assets/vlog.jpeg);
+          background-size: cover;
+          /* background-position: center left; */
+   
+}
+      .item-3{
+    
+        height: 200px;
+        width: 130px;
+          background-image: url(assets/vlog2.jpeg);
+          background-size: cover;
+          background-position: bottom;
+   
+}
+
+.card{
+       display: grid;
+            grid-template-areas: "nav  "
+                                "article   ";
+                        
+   
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+         justify-items: center;
+}
+
+   .item-7{
+        width: 350px;
+        height: 180px;
+
+      background: linear-gradient(#312c51, #642b73) ;
+
+       }
+   .item-8{
+        width: 350px;
+        height: 180px;
+
+      background: linear-gradient(#312c51, #642b73) ;
+
+       }
+   .item-9{
+        width: 350px;
+        height: 180px;
+
+      background: linear-gradient(#312c51, #642b73) ;
+
+       }
+   .item-10{
+        width: 350px;
+        height: 180px;
+
+      background: linear-gradient(#312c51, #642b73) ;
+
+       }
+
+       }
+
+   
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+      .faq {
+    background: black;
+    color: white;
+    padding: 34px;
+}
+.faqbox {
+    transition: all 0.7s ease-out;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 15px;
+    max-width: 100vw;
+    margin: 13px auto;
+    cursor: pointer;
+    
+}
+
+.flag input{
+    padding: 7px 101px 8px 14px;
+    color: white;
+    /* font-weight: 500; */
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23,23, 0.7);
+    border-radius: rgba(256, 232, 232, 0.5);
+   
+}
+
+
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+   
+}
+footer a{
+    color: white;
+}
+footer .questions{
+ 
+    padding: 34px 0;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    color: white;
+  padding-top: 5px;
+  
+    
+}
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 10px;
+          max-width: 90vw;
+    }
+    nav{
+        max-width: 90vw;
+    }
+    .hero> :nth-child(1){
+    font-size: 32px;
+  
+}
+    .hero> :nth-child(2){
+    font-size: 18px;
+  
+}
+    .hero> :nth-child(3){
+    font-size: 18px;
+  
+}
+.hero-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+}
+       .faq h2 {
+    text-align: center;
+    font-size: 32px;
+}
+}
